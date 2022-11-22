@@ -28,3 +28,15 @@ zokrates export-verifier
 zokrates verify
 ```
 
+### Variable types
+Functions defined as the follows:
+```
+def main -> feild {...}
+```
+Indicate that the funtion returns a value of type field. `Field` types can range from value between [1 - 21888242871839275222246405745257275088548364400416034343698204186575808495617] (this is a very large prime number). Anything stored in the field type outside the range will overflow.
+
+`bool` type is used for storing 0 or 1 values.
+
+`u8/u16/u32/u64` type implies an unsigned integer that stores values in the range of [0 - 2 ** bitwidth]. For eg, u8 will range from [0 - 2 ** 8].
+
+
